@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation v1.0</title>
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            color: #60a5fa;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .endpoint {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        .method-get {
+            color: #34d399;
+            font-weight: bold;
+        }
+        pre {
+            background: #1e293b;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Fira Code', monospace;
+            color: #e2e8f0;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            color: #94a3b8;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API Documentation v1.0</h1>
+        
+        <div class="endpoint">
+            <h2><span class="method-get">GET</span> /</h2>
+            <p>Retrieves the personal profile webpage.</p>
+            <p><strong>Description:</strong> Returns the main portfolio page with personal information, skills, and social links.</p>
+            <p><strong>Response:</strong></p>
+            <pre><code>
+{
+  "status": "success",
+  "message": "Portfolio page loaded",
+  "content": "HTML page with React-based portfolio"
+}
+            </code></pre>
+        </div>
+
+        <div class="endpoint">
+            <h2><span class="method-get">GET</span> /apiDocs</h2>
+            <p>Retrieves the API documentation page.</p>
+            <p><strong>Description:</strong> Returns a static HTML page containing the API documentation.</p>
+            <p><strong>Response:</strong></p>
+            <pre><code>
+{
+  "status": "success",
+  "message": "API documentation loaded",
+  "content": "Static HTML documentation page"
+}
+            </code></pre>
+        </div>
+
+        <div class="footer">
+            <p>API Documentation | Created by Your Name | 2025</p>
+        </div>
+    </div>
+</body>
+</html>
